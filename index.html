@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="JSR Carpintería - Soluciones integrales para empresas estatales, MiPyMEs y hogares. Diseño estilo Apple en Cumanayagua, Cuba.">
+    <title>JSR Carpintería | Construcción & Diseño</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SEO & Open Graph -->
+    <link rel="canonical" href="https://jsr.cu/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JSR Carpintería | Construcción & Diseño" />
+    <meta property="og:description"
+        content="Soluciones integrales de carpintería y construcción para el sector estatal, empresas privadas y el hogar cubano. Diseño estilo Apple en Cumanayagua." />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://jsr.cu/" />
+    <meta property="og:site_name" content="JSR Carpintería" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JSR Carpintería | Construcción & Diseño" />
+    <meta name="twitter:description"
+        content="Diseño que inspira. Calidad que perdura. Soluciones de carpintería en Cumanayagua, Cuba." />
+    <meta name="twitter:image"
+        content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "JSR Carpintería",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80",
+      "telephone": "+5350000000",
+      "email": "ventas@jsr.cu",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cumanayagua",
+        "addressRegion": "Cienfuegos",
+        "addressCountry": "CU"
+      },
+      "description": "Soluciones integrales de carpintería y construcción para el sector estatal, empresas privadas y el hogar cubano.",
+      "url": "https://jsr.cu/"
+    }
+    </script>
+</head>
+
+<body class="pb-20 md:pb-0"> <!-- Padding inferior para no tapar contenido con la Tab Bar en móvil -->
+
+    <!-- Header / Navegación Desktop -->
+    <nav class="fixed w-full z-[100] glass-nav top-0 border-b border-black/[0.05]">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-6 flex justify-between items-center h-14 md:h-16">
+            <a href="#inicio" class="flex items-center space-x-2 shrink-0">
+                <i data-lucide="box" class="w-5 h-5 text-black"></i>
+                <span class="font-bold text-[17px] md:text-[19px] tracking-tight">JSR Carpintería</span>
+            </a>
+
+            <!-- Menú Desktop (Se oculta en móvil/tablet) -->
+            <div class="hidden lg:flex space-x-8 text-[11px] font-medium text-black/60 uppercase tracking-wider">
+                <a href="sobre-nosotros.html" class="hover:text-black transition-colors">Nosotros</a>
+                <a href="#sectores" class="hover:text-black transition-colors">Experiencia</a>
+                <a href="empresas.html" class="hover:text-black transition-colors">Corporativo</a>
+                <a href="catalogo.html" class="hover:text-black transition-colors">Catálogo</a>
+                <a href="#faq" class="hover:text-black transition-colors">Preguntas</a>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <a href="#contacto"
+                    class="text-[11px] md:text-[12px] font-semibold bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-all whitespace-nowrap">
+                    Presupuesto
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Tab Bar (Solo visible en pantallas pequeñas y medianas) -->
+    <div class="mobile-tab-bar lg:hidden">
+        <a href="#inicio" class="tab-item active">
+            <i data-lucide="home"></i>
+            <span>Inicio</span>
+        </a>
+        <a href="#sectores" class="tab-item">
+            <i data-lucide="award"></i>
+            <span>Experiencia</span>
+        </a>
+        <a href="catalogo.html" class="tab-item">
+            <i data-lucide="layout-grid"></i>
+            <span>Catálogo</span>
+        </a>
+        <a href="empresas.html" class="tab-item">
+            <i data-lucide="briefcase"></i>
+            <span>B2B</span>
+        </a>
+        <a href="#faq" class="tab-item">
+            <i data-lucide="message-circle"></i>
+            <span>Ayuda</span>
+        </a>
+        <a href="#contacto" class="tab-item">
+            <i data-lucide="user"></i>
+            <span>Contacto</span>
+        </a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="pt-24 md:pt-40 pb-12 md:pb-24 px-6 text-center max-w-[1100px] mx-auto fade-in">
+            <h1
+                class="text-4xl sm:text-5xl md:text-7xl lg:text-[84px] font-extrabold tracking-tight leading-[1.1] mb-6 md:mb-8 text-[#1D1D1F]">
+                Diseño que inspira.<br class="hidden sm:block">
+                <span class="text-black/30">Calidad que perdura.</span>
+            </h1>
+            <p class="text-base md:text-xl lg:text-2xl text-gray-500 font-medium mb-8 md:mb-12 max-w-3xl mx-auto px-4">
+                Soluciones integrales de carpintería y construcción para el sector estatal, empresas privadas y el hogar
+                cubano.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 px-6">
+                <a href="#catalogo" class="ios-button-primary w-full sm:w-auto">Explorar Catálogo</a>
+                <a href="empresas.html"
+                    class="flex items-center justify-center space-x-2 font-semibold text-blue-600 hover:underline py-2">
+                    <span>Soluciones Corporativas</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Imagen Principal -->
+        <section class="px-4 md:px-6 mb-16 md:mb-24 fade-in">
+            <div
+                class="max-w-[1100px] mx-auto rounded-[32px] md:rounded-[42px] overflow-hidden shadow-xl md:shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80"
+                    alt="Interior minimalista JSR" class="w-full h-[280px] sm:h-[450px] md:h-[600px] object-cover"
+                    loading="lazy" width="1600" height="900">
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Sobre Nosotros -->
+        <section id="nosotros" class="py-16 md:py-24 px-6 fade-in">
+            <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="badge-ios mb-6 inline-block">Nuestra Esencia</span>
+                    <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-[#1D1D1F]">Pasión por el detalle.
+                    </h2>
+                    <p class="text-lg text-gray-500 mb-6 leading-relaxed">
+                        En JSR Carpintería, fusionamos la tradición artesanal cubana con las tendencias más modernas del
+                        diseño industrial.
+                    </p>
+                    <div class="flex items-center space-x-4 mb-8">
+                        <a href="sobre-nosotros.html"
+                            class="text-blue-600 font-semibold hover:underline flex items-center">
+                            Conocer más sobre nosotros <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-4 text-sm font-semibold text-[#1D1D1F]">
+                        <div class="flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Materiales Premium</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>
+                            <span>Garantía Real</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="ios-card p-2 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=800&q=80"
+                            alt="Artesano trabajando madera"
+                            class="w-full h-[300px] md:h-[500px] object-cover rounded-[20px]" loading="lazy" width="800"
+                            height="1000">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Experiencia Sectorial -->
+        <section id="sectores" class="py-16 md:py-24 px-6 fade-in">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="text-center mb-12">
+                    <span class="badge-ios mb-4 inline-block">Especialización Técnica</span>
+                    <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-[#1D1D1F]">Experiencia Sectorial.
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div class="ios-card p-6 md:p-8 group">
+                        <div class="icon-box-ios bg-rose-50 text-rose-500">
+                            <i data-lucide="hospital"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-3 text-[#1D1D1F]">Salud Pública</h3>
+                        <p class="text-xs md:text-sm text-gray-500 leading-relaxed">Mobiliario clínico bajo estrictas
+                            normas de higiene.</p>
+                    </div>
+
+                    <div class="ios-card p-6 md:p-8 group">
+                        <div class="icon-box-ios bg-orange-50 text-orange-500">
+                            <i data-lucide="palmtree"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-3 text-[#1D1D1F]">Turismo</h3>
+                        <p class="text-xs md:text-sm text-gray-500 leading-relaxed">Equipamiento integral para hoteles y
+                            áreas comunes.</p>
+                    </div>
+
+                    <div class="ios-card p-6 md:p-8 group">
+                        <div class="icon-box-ios bg-blue-50 text-blue-600">
+                            <i data-lucide="radio"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-3 text-[#1D1D1F]">Radio & Educ.</h3>
+                        <p class="text-xs md:text-sm text-gray-500 leading-relaxed">Tratamiento acústico y mobiliario
+                            ergonómico.</p>
+                    </div>
+
+                    <div class="ios-card p-6 md:p-8 group">
+                        <div class="icon-box-ios bg-zinc-100 text-zinc-800">
+                            <i data-lucide="landmark"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-3 text-[#1D1D1F]">Gobierno</h3>
+                        <p class="text-xs md:text-sm text-gray-500 leading-relaxed">Mantenimiento de sedes y diseño de
+                            oficinas presidenciales.</p>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <a href="empresas.html" class="font-bold text-blue-600 hover:underline inline-flex items-center">
+                        Ver cómo trabajamos con empresas <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Corporativo -->
+        <section id="proyectos" class="py-16 md:py-24 bg-white fade-in">
+            <div class="max-w-[1200px] mx-auto px-6 text-center">
+                <span class="badge-ios mb-4 inline-block">B2B & Alianzas</span>
+                <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-12 text-[#1D1D1F]">Soluciones Corporativas.
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="ios-card p-8 md:p-12 text-left bg-zinc-50 border-none">
+                        <h3 class="text-2xl font-bold mb-4">Empresas Estatales</h3>
+                        <p class="text-gray-500 mb-6">Contratos oficiales y cumplimiento riguroso de normativas
+                            gubernamentales en Cuba.</p>
+                        <i data-lucide="building-2" class="text-blue-600"></i>
+                    </div>
+                    <div class="ios-card p-8 md:p-12 text-left bg-black text-white border-none">
+                        <h3 class="text-2xl font-bold mb-4">Sector MiPyME</h3>
+                        <p class="text-gray-400 mb-6">Diseño de vanguardia para nuevos negocios y emprendimientos
+                            privados.</p>
+                        <i data-lucide="briefcase" class="text-white"></i>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <a href="empresas.html"
+                        class="ios-button-primary bg-zinc-900 text-white hover:bg-black inline-block px-8 py-3">
+                        Explorar División Corporativa
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo -->
+        <section id="catalogo" class="py-16 md:py-24 px-6 fade-in">
+            <div class="max-w-[1200px] mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-[#1D1D1F]">Esenciales para tu espacio.</h2>
+                <div class="flex overflow-x-auto gap-6 pb-8 no-scrollbar snap-x snap-mandatory">
+                    <div class="snap-start shrink-0 w-[280px] sm:w-[320px]">
+                        <div class="bg-white p-4 ios-card">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=500&q=80"
+                                class="w-full h-64 object-cover rounded-2xl mb-4" width="500" height="333"
+                                alt="Silla Minimalista">
+                            <h3 class="font-bold">Silla Minimalista</h3>
+                            <p class="text-gray-500 text-sm mb-4">Cedro Seleccionado</p>
+                            <div class="btn-action-group">
+                                <a href="https://cumashop.cu/producto/silla-minimalista" target="_blank"
+                                    class="btn-cumashop">
+                                    <i data-lucide="shopping-bag"></i> Comprar
+                                </a>
+                                <a href="https://wa.me/5350000000?text=Info%20Silla%20Minimalista" target="_blank"
+                                    class="btn-whatsapp">
+                                    <i data-lucide="message-circle"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snap-start shrink-0 w-[280px] sm:w-[320px]">
+                        <div class="bg-white p-4 ios-card">
+                            <img src="https://images.unsplash.com/photo-1544030749-045a62a19b38?auto=format&fit=crop&w=500&q=80"
+                                class="w-full h-64 object-cover rounded-2xl mb-4" width="500" height="333"
+                                alt="Mesa de Centro">
+                            <h3 class="font-bold">Mesa de Centro</h3>
+                            <p class="text-gray-500 text-sm mb-4">Estilo Zen</p>
+                            <div class="btn-action-group">
+                                <a href="#" class="btn-cumashop">
+                                    <i data-lucide="shopping-bag"></i> Comprar
+                                </a>
+                                <a href="https://wa.me/5350000000?text=Info%20Mesa%20Centro" target="_blank"
+                                    class="btn-whatsapp">
+                                    <i data-lucide="message-circle"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snap-start shrink-0 w-[280px] sm:w-[320px]">
+                        <div class="bg-white p-4 ios-card">
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=500&q=80"
+                                class="w-full h-64 object-cover rounded-2xl mb-4" width="500" height="333"
+                                alt="Escritorio Pro">
+                            <h3 class="font-bold">Escritorio Pro</h3>
+                            <p class="text-gray-500 text-sm mb-4">Work from home</p>
+                            <div class="btn-action-group">
+                                <a href="#" class="btn-cumashop">
+                                    <i data-lucide="shopping-bag"></i> Comprar
+                                </a>
+                                <a href="https://wa.me/5350000000?text=Info%20Escritorio%20Pro" target="_blank"
+                                    class="btn-whatsapp">
+                                    <i data-lucide="message-circle"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center md:text-right">
+                    <a href="catalogo.html"
+                        class="font-bold text-black hover:opacity-70 inline-flex items-center text-sm md:text-base">
+                        Ver Catálogo Completo <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-16 md:py-24 bg-white px-6 fade-in">
+            <div class="max-w-[800px] mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center text-[#1D1D1F]">Preguntas Frecuentes.</h2>
+                <div class="space-y-4 mb-16">
+                    <!-- Q1 -->
+                    <div class="faq-item cursor-pointer bg-zinc-50 hover:bg-zinc-100 transition-colors rounded-2xl px-6 py-2"
+                        onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center py-4">
+                            <h3 class="font-bold text-[#1D1D1F] text-sm md:text-base">¿Realizan envíos fuera de
+                                Cumanayagua?</h3>
+                            <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
+                                <i data-lucide="plus" class="faq-icon w-4 h-4 text-gray-400 transition-transform"></i>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <p class="text-gray-500 text-sm pb-6 leading-relaxed border-t border-gray-200/50 pt-4">
+                                Sí, entregamos en toda la provincia de Cienfuegos y gestionamos logística nacional para
+                                proyectos grandes.
+                                Contamos con transporte propio para garantizar que los muebles lleguen en perfecto
+                                estado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-item cursor-pointer bg-zinc-50 hover:bg-zinc-100 transition-colors rounded-2xl px-6 py-2"
+                        onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center py-4">
+                            <h3 class="font-bold text-[#1D1D1F] text-sm md:text-base">¿Qué tipos de materiales utilizan?
+                            </h3>
+                            <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
+                                <i data-lucide="plus" class="faq-icon w-4 h-4 text-gray-400 transition-transform"></i>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <p class="text-gray-500 text-sm pb-6 leading-relaxed border-t border-gray-200/50 pt-4">
+                                Trabajamos principalmente con maderas preciosas cubanas (Cedro, Caoba) y tableros
+                                importados de alta densidad (Plywood fenólico, Melamina hidrófuga)
+                                para garantizar durabilidad y resistencia al clima húmedo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-item cursor-pointer bg-zinc-50 hover:bg-zinc-100 transition-colors rounded-2xl px-6 py-2"
+                        onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center py-4">
+                            <h3 class="font-bold text-[#1D1D1F] text-sm md:text-base">¿Puedo solicitar un diseño a
+                                medida?</h3>
+                            <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
+                                <i data-lucide="plus" class="faq-icon w-4 h-4 text-gray-400 transition-transform"></i>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <p class="text-gray-500 text-sm pb-6 leading-relaxed border-t border-gray-200/50 pt-4">
+                                Absolutamente. Nuestro departamento de diseño puede trabajar a partir de una foto, un
+                                boceto o un plano arquitectónico.
+                                Creamos renders 3D previos para que visualices el resultado final antes de fabricar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="faq-item cursor-pointer bg-zinc-50 hover:bg-zinc-100 transition-colors rounded-2xl px-6 py-2"
+                        onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center py-4">
+                            <h3 class="font-bold text-[#1D1D1F] text-sm md:text-base">¿Qué garantía ofrecen?</h3>
+                            <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
+                                <i data-lucide="plus" class="faq-icon w-4 h-4 text-gray-400 transition-transform"></i>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <p class="text-gray-500 text-sm pb-6 leading-relaxed border-t border-gray-200/50 pt-4">
+                                Ofrecemos 1 año de garantía por defectos de fabricación en estructura y acabados.
+                                Además, brindamos servicio de mantenimiento post-venta para asegurar la longevidad de
+                                sus muebles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="faq-item cursor-pointer bg-zinc-50 hover:bg-zinc-100 transition-colors rounded-2xl px-6 py-2"
+                        onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center py-4">
+                            <h3 class="font-bold text-[#1D1D1F] text-sm md:text-base">¿Aceptan pagos digitales?</h3>
+                            <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
+                                <i data-lucide="plus" class="faq-icon w-4 h-4 text-gray-400 transition-transform"></i>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <p class="text-gray-500 text-sm pb-6 leading-relaxed border-t border-gray-200/50 pt-4">
+                                Sí, aceptamos transferencias bancarias, Transfermóvil y Enzona.
+                                Para empresas estatales y MiPyMEs, emitimos facturas oficiales válidas para su
+                                contabilidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque IA -->
+                <div class="bg-[#F5F5F7] rounded-[32px] p-8 text-center">
+                    <i data-lucide="sparkles" class="w-8 h-8 text-blue-600 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">¿Dudas adicionales?</h3>
+                    <p class="text-sm text-gray-500 mb-6">Usa nuestra IA o contacta al equipo.</p>
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                        <button class="bg-black text-white px-6 py-3 rounded-full font-bold text-sm">Preguntar
+                            IA</button>
+                        <a href="#contacto"
+                            class="bg-white text-black border border-black/10 px-6 py-3 rounded-full font-bold text-sm">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 md:py-32 px-4 md:px-6 fade-in mb-12 md:mb-0">
+            <div
+                class="max-w-[800px] mx-auto bg-white rounded-[36px] md:rounded-[48px] p-8 md:p-20 border border-black/5 text-center shadow-sm">
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tighter mb-8 text-[#1D1D1F]">Hagamos realidad tu
+                    proyecto.</h2>
+                <a href="https://wa.me/5350000000" class="ios-button-primary px-10 py-4 scale-105" target="_blank"
+                    rel="noopener noreferrer">WhatsApp Directo</a>
+                <div
+                    class="mt-12 flex flex-col md:flex-row justify-center gap-6 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                    <span>Cumanayagua, Cuba</span>
+                    <span>ventas@jsr.cu</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#F5F5F7] py-12 px-6 border-t border-gray-200 hidden lg:block">
+        <div class="max-w-[1200px] mx-auto flex justify-between items-center">
+            <div>
+                <span class="font-bold text-[18px]">JSR Carpintería</span>
+                <p class="text-gray-400 text-[11px]">© 2024 JSR Carpintería & Construcción.</p>
+            </div>
+            <div class="flex gap-8 text-[10px] font-bold uppercase text-gray-500">
+                <a href="#catalogo">Catálogo</a>
+                <a href="#faq">Ayuda</a>
+                <a href="#">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

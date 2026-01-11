@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explora el catálogo de JSR Carpintería. Muebles de diseño para hogar, oficina y exteriores en Cuba.">
+    <title>Catálogo | JSR Carpintería</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SEO & Open Graph -->
+    <link rel="canonical" href="https://jsr.cu/catalogo.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Catálogo | JSR Carpintería" />
+    <meta property="og:description"
+        content="Diseño que perdura. Descubre nuestras colecciones de mobiliario artesanal con acabado industrial." />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://jsr.cu/catalogo.html" />
+    <meta property="og:site_name" content="JSR Carpintería" />
+</head>
+
+<body class="pb-20 md:pb-0 bg-white">
+
+    <!-- Header / Navegación Desktop -->
+    <nav class="fixed w-full z-[100] glass-nav top-0 border-b border-black/[0.05]">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-6 flex justify-between items-center h-14 md:h-16">
+            <a href="index.html" class="flex items-center space-x-2 shrink-0">
+                <i data-lucide="box" class="w-5 h-5 text-black"></i>
+                <span class="font-bold text-[17px] md:text-[19px] tracking-tight">JSR Carpintería</span>
+            </a>
+
+            <!-- Menú Desktop -->
+            <div class="hidden lg:flex space-x-8 text-[11px] font-medium text-black/60 uppercase tracking-wider">
+                <a href="sobre-nosotros.html" class="hover:text-black transition-colors">Nosotros</a>
+                <a href="empresas.html" class="hover:text-black transition-colors">Corporativo</a>
+                <a href="catalogo.html" class="text-black font-bold">Catálogo</a>
+                <a href="index.html#sectores" class="hover:text-black transition-colors">Experiencia</a>
+                <a href="index.html#faq" class="hover:text-black transition-colors">Preguntas</a>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <a href="index.html#contacto"
+                    class="text-[11px] md:text-[12px] font-semibold bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-all whitespace-nowrap">
+                    Presupuesto
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Tab Bar -->
+    <div class="mobile-tab-bar lg:hidden">
+        <a href="index.html" class="tab-item">
+            <i data-lucide="home"></i>
+            <span>Inicio</span>
+        </a>
+        <a href="catalogo.html" class="tab-item active">
+            <i data-lucide="layout-grid"></i>
+            <span>Catálogo</span>
+        </a>
+        <a href="empresas.html" class="tab-item">
+            <i data-lucide="briefcase"></i>
+            <span>B2B</span>
+        </a>
+        <a href="index.html#contacto" class="tab-item">
+            <i data-lucide="user"></i>
+            <span>Contacto</span>
+        </a>
+    </div>
+
+    <main>
+        <!-- Hero Section Catálogo -->
+        <section class="pt-32 md:pt-48 pb-12 px-6 text-center max-w-[1100px] mx-auto fade-in">
+            <span class="badge-ios mb-6 inline-block">Colección 2024-2025</span>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6 text-[#1D1D1F]">
+                Diseñado para vivir.<br>
+                <span class="text-gray-400">Creado para durar.</span>
+            </h1>
+            <p class="text-lg text-gray-500 font-medium mb-12 max-w-2xl mx-auto">
+                Explora nuestras líneas de mobiliario. Desde piezas únicas para el hogar hasta soluciones modulares para
+                oficina.
+            </p>
+
+            <!-- Filtros (Visuales) -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12">
+                <button class="px-6 py-2 rounded-full bg-black text-white text-sm font-bold">Todos</button>
+                <button
+                    class="px-6 py-2 rounded-full bg-zinc-100 text-gray-600 hover:bg-zinc-200 text-sm font-bold transition-colors">Hogar</button>
+                <button
+                    class="px-6 py-2 rounded-full bg-zinc-100 text-gray-600 hover:bg-zinc-200 text-sm font-bold transition-colors">Oficina</button>
+                <button
+                    class="px-6 py-2 rounded-full bg-zinc-100 text-gray-600 hover:bg-zinc-200 text-sm font-bold transition-colors">Cocina</button>
+                <button
+                    class="px-6 py-2 rounded-full bg-zinc-100 text-gray-600 hover:bg-zinc-200 text-sm font-bold transition-colors">Exteriores</button>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="pb-24 px-4 md:px-6 fade-in">
+            <div class="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+
+                <!-- Producto 1 -->
+                <div class="group">
+                    <div class="ios-card overflow-hidden mb-4 relative aspect-[4/5] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=80"
+                            alt="Silla Nórdica"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold shadow-sm">
+                            Nuevo
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#1D1D1F]">Silla Nórdica "Havana"</h3>
+                    <p class="text-gray-500 text-sm mb-2">Roble blanco y tejido antimanchas</p>
+
+                    <div class="btn-action-group">
+                        <a href="https://cumashop.cu/producto/silla-havana" target="_blank" class="btn-cumashop">
+                            <i data-lucide="shopping-bag"></i> Comprar en CumaShop
+                        </a>
+                        <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Silla%20Nórdica%20Havana"
+                            target="_blank" class="btn-whatsapp">
+                            <i data-lucide="message-circle"></i> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="group">
+                    <div class="ios-card overflow-hidden mb-4 relative aspect-[4/5] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80"
+                            alt="Escritorio Ejecutivo"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3 class="text-lg font-bold text-[#1D1D1F]">Escritorio Ejecutivo "Líder"</h3>
+                    <p class="text-gray-500 text-sm mb-2">Cedro macizo con pasacables integrado</p>
+
+                    <div class="btn-action-group">
+                        <a href="#" class="btn-cumashop">
+                            <i data-lucide="shopping-bag"></i> Comprar en CumaShop
+                        </a>
+                        <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20el%20Escritorio%20Líder"
+                            target="_blank" class="btn-whatsapp">
+                            <i data-lucide="message-circle"></i> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="group">
+                    <div class="ios-card overflow-hidden mb-4 relative aspect-[4/5] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=800&q=80"
+                            alt="Sofá Modular"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3 class="text-lg font-bold text-[#1D1D1F]">Sofá Modular "Bahía"</h3>
+                    <p class="text-gray-500 text-sm mb-2">Estructura de pino tratado</p>
+
+                    <div class="btn-action-group">
+                        <a href="#" class="btn-cumashop">
+                            <i data-lucide="shopping-bag"></i> Comprar en CumaShop
+                        </a>
+                        <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20el%20Sofá%20Bahía"
+                            target="_blank" class="btn-whatsapp">
+                            <i data-lucide="message-circle"></i> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="group">
+                    <div class="ios-card overflow-hidden mb-4 relative aspect-[4/5] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80"
+                            alt="Gabinete de Cocina"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3 class="text-lg font-bold text-[#1D1D1F]">Cocina Integral "Minimal"</h3>
+                    <p class="text-gray-500 text-sm mb-2">Melamina hidrófuga alto brillo</p>
+
+                    <div class="btn-action-group">
+                        <a href="#" class="btn-cumashop">
+                            <i data-lucide="shopping-bag"></i> Comprar en CumaShop
+                        </a>
+                        <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Cocina%20Minimal"
+                            target="_blank" class="btn-whatsapp">
+                            <i data-lucide="message-circle"></i> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="group">
+                    <div class="ios-card overflow-hidden mb-4 relative aspect-[4/5] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=800&q=80"
+                            alt="Mesa de Centro"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold shadow-sm text-orange-500">
+                            Popular
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#1D1D1F]">Mesa de Centro "Zen"</h3>
+                    <p class="text-gray-500 text-sm mb-2">Madera preciosa y cristal templado</p>
+
+                    <div class="btn-action-group">
+                        <a href="#" class="btn-cumashop">
+                            <i data-lucide="shopping-bag"></i> Comprar en CumaShop
+                        </a>
+                        <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Mesa%20Zen" target="_blank"
+                            class="btn-whatsapp">
+                            <i data-lucide="message-circle"></i> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="group">
+                    <div class="ios-card overflow-hidden mb-4 relative aspect-[4/5] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80"
+                            alt="Silla de Exterior"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3 class="text-lg font-bold text-[#1D1D1F]">Silla "Patio"</h3>
+                    <p class="text-gray-500 text-sm mb-2">Resistente a la intemperie</p>
+
+                    <div class="btn-action-group">
+                        <a href="#" class="btn-cumashop">
+                            <i data-lucide="shopping-bag"></i> Comprar en CumaShop
+                        </a>
+                        <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Silla%20Patio"
+                            target="_blank" class="btn-whatsapp">
+                            <i data-lucide="message-circle"></i> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-400 text-sm mb-4">Mostrando 6 de 24 productos</p>
+                <button class="ios-button-primary bg-zinc-100 text-black hover:bg-zinc-200">Cargar más
+                    productos</button>
+            </div>
+        </section>
+
+        <!-- CTA Personalizado -->
+        <section class="py-20 text-center px-6 border-t border-gray-100 bg-zinc-50">
+            <h2 class="text-3xl font-bold mb-4 text-[#1D1D1F]">¿No encuentras lo que buscas?</h2>
+            <p class="text-gray-500 mb-8 max-w-lg mx-auto">
+                Somos fabricantes. Si puedes imaginarlo, podemos construirlo a la medida de tu espacio.
+            </p>
+            <a href="index.html#contacto" class="inline-flex items-center font-bold text-blue-600 hover:underline">
+                Solicitar diseño a medida <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#F5F5F7] py-12 px-6 border-t border-gray-200 hidden lg:block">
+        <div class="max-w-[1200px] mx-auto flex justify-between items-center">
+            <div>
+                <span class="font-bold text-[18px]">JSR Carpintería</span>
+                <p class="text-gray-400 text-[11px]">© 2024 JSR Carpintería & Construcción.</p>
+            </div>
+            <div class="flex gap-8 text-[10px] font-bold uppercase text-gray-500">
+                <a href="catalogo.html" class="text-black">Catálogo</a>
+                <a href="index.html#faq">Ayuda</a>
+                <a href="#">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
