@@ -9,6 +9,15 @@ function toggleFaq(element) {
     if (!isActive) element.classList.add('active');
 }
 
+
+function goBackOrHome(fallback = 'index.html') {
+    if (window.history.length > 1) {
+        window.history.back();
+        return;
+    }
+    window.location.href = fallback;
+}
+
 function setActiveNavigation() {
     const path = window.location.pathname.split('/').pop() || 'index.html';
     const hash = window.location.hash;
