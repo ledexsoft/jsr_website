@@ -23,44 +23,148 @@ html, body {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 
+
+/* Navegación superior unificada estilo iOS 26 */
+.ios26-nav-shell {
+    padding-top: env(safe-area-inset-top);
+}
+
+.ios26-nav {
+    min-height: 56px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 10px;
+    box-shadow: 0 10px 28px -18px rgba(0, 0, 0, 0.32);
+}
+
+.ios26-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #1D1D1F;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    padding: 8px 10px;
+    border-radius: 999px;
+}
+
+.ios26-nav-links {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 999px;
+    padding: 4px;
+    gap: 2px;
+}
+
+.ios26-nav-links a {
+    text-decoration: none;
+    color: rgba(29, 29, 31, 0.78);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    padding: 8px 12px;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+}
+
+.ios26-nav-links a:hover {
+    color: #1D1D1F;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.ios26-nav-links .top-nav-link.active {
+    color: #1D1D1F;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.ios26-nav.is-scrolled {
+    background: rgba(255, 255, 255, 0.88);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.ios26-cta {
+    text-decoration: none;
+    background: linear-gradient(180deg, #0A84FF, #007AFF);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    padding: 10px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+    box-shadow: 0 8px 18px -12px rgba(0, 122, 255, 0.8);
+}
+
+.ios26-cta:hover {
+    filter: brightness(0.95);
+}
+
+@media (max-width: 1023px) {
+    .ios26-nav {
+        min-height: 52px;
+    }
+
+    .ios26-brand span {
+        font-size: 13px;
+    }
+
+    .ios26-cta {
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+}
+
 /* Barra de navegación inferior (Mobile Tab Bar) */
 .mobile-tab-bar {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 65px;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    border-top: 1px solid rgba(0,0,0,0.05);
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(96%, 440px);
+    height: 68px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: saturate(180%) blur(22px);
+    -webkit-backdrop-filter: saturate(180%) blur(22px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 1000;
-    padding-bottom: env(safe-area-inset-bottom);
+    padding: 6px;
+    box-shadow: 0 16px 34px -24px rgba(0, 0, 0, 0.4);
 }
 
 .tab-item {
+    min-width: 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2px;
     color: #8E8E93;
     text-decoration: none;
     font-size: 10px;
-    font-weight: 500;
-    transition: color 0.2s ease;
+    font-weight: 600;
+    border-radius: 14px;
+    padding: 8px 10px;
+    transition: all 0.2s ease;
 }
 
 .tab-item.active {
     color: var(--ios-blue);
+    background: rgba(0, 122, 255, 0.12);
 }
 
 .tab-item i {
-    margin-bottom: 4px;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
 }
 
 .ios-card {

@@ -29,47 +29,45 @@
 <body class="pb-20 md:pb-0 bg-white">
 
     <!-- Header / Navegación Desktop -->
-    <nav class="fixed w-full z-[100] glass-nav top-0 border-b border-black/[0.05]">
-        <div class="max-w-[1200px] mx-auto px-4 md:px-6 flex justify-between items-center h-14 md:h-16">
-            <a href="index.html" class="flex items-center space-x-2 shrink-0">
-                <i data-lucide="box" class="w-5 h-5 text-black"></i>
-                <span class="font-bold text-[17px] md:text-[19px] tracking-tight">JSR Carpintería</span>
-            </a>
+    <nav class="fixed top-0 inset-x-0 z-[100] ios26-nav-shell">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-6 py-3">
+            <div class="ios26-nav glass-nav border border-black/[0.06]">
+                <a href="index.html" class="ios26-brand" aria-label="Ir al inicio">
+                    <i data-lucide="box" class="w-5 h-5 text-black"></i>
+                    <span>JSR Carpintería</span>
+                </a>
 
-            <!-- Menú Desktop -->
-            <div class="hidden lg:flex space-x-8 text-[11px] font-medium text-black/60 uppercase tracking-wider">
-                <a href="sobre-nosotros.html" class="hover:text-black transition-colors">Nosotros</a>
-                <a href="empresas.html" class="hover:text-black transition-colors">Corporativo</a>
-                <a href="catalogo.html" class="text-black font-bold">Catálogo</a>
-                <a href="index.html#sectores" class="hover:text-black transition-colors">Experiencia</a>
-                <a href="index.html#faq" class="hover:text-black transition-colors">Preguntas</a>
-            </div>
+                <div class="ios26-nav-links hidden lg:flex" role="navigation" aria-label="Navegación principal">
+                    <a href="index.html" class="top-nav-link" data-nav-key="inicio">Inicio</a>
+                    <a href="catalogo.html" class="top-nav-link" data-nav-key="catalogo">Catálogo</a>
+                    <a href="empresas.html" class="top-nav-link" data-nav-key="empresas">Empresas</a>
+                    <a href="sobre-nosotros.html" class="top-nav-link" data-nav-key="nosotros">Nosotros</a>
+                    <a href="index.html#faq" class="top-nav-link" data-nav-key="ayuda">Ayuda</a>
+                </div>
 
-            <div class="flex items-center space-x-3">
-                <a href="index.html#contacto"
-                    class="text-[11px] md:text-[12px] font-semibold bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-all whitespace-nowrap">
-                    Presupuesto
+                <a href="index.html#contacto" class="ios26-cta" data-nav-key="contacto">
+                    Solicitar presupuesto
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- Mobile Tab Bar -->
-    <div class="mobile-tab-bar lg:hidden">
-        <a href="index.html" class="tab-item">
+    <div class="mobile-tab-bar lg:hidden" role="navigation" aria-label="Navegación móvil">
+        <a href="index.html" class="tab-item" data-nav-key="inicio">
             <i data-lucide="home"></i>
             <span>Inicio</span>
         </a>
-        <a href="catalogo.html" class="tab-item active">
+        <a href="catalogo.html" class="tab-item" data-nav-key="catalogo">
             <i data-lucide="layout-grid"></i>
             <span>Catálogo</span>
         </a>
-        <a href="empresas.html" class="tab-item">
+        <a href="empresas.html" class="tab-item" data-nav-key="empresas">
             <i data-lucide="briefcase"></i>
-            <span>B2B</span>
+            <span>Empresas</span>
         </a>
-        <a href="index.html#contacto" class="tab-item">
-            <i data-lucide="user"></i>
+        <a href="index.html#contacto" class="tab-item" data-nav-key="contacto">
+            <i data-lucide="message-circle"></i>
             <span>Contacto</span>
         </a>
     </div>
@@ -120,11 +118,11 @@
                     <p class="text-gray-500 text-sm mb-2">Roble blanco y tejido antimanchas</p>
 
                     <div class="btn-action-group">
-                        <a href="https://cumashop.cu/producto/silla-havana" target="_blank" class="btn-cumashop">
+                        <a href="https://cumashop.cu/producto/silla-havana" target="_blank" rel="noopener noreferrer" class="btn-cumashop">
                             <i data-lucide="shopping-bag"></i> Comprar en CumaShop
                         </a>
                         <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Silla%20Nórdica%20Havana"
-                            target="_blank" class="btn-whatsapp">
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
                             <i data-lucide="message-circle"></i> Pedir por WhatsApp
                         </a>
                     </div>
@@ -141,11 +139,11 @@
                     <p class="text-gray-500 text-sm mb-2">Cedro macizo con pasacables integrado</p>
 
                     <div class="btn-action-group">
-                        <a href="#" class="btn-cumashop">
+                        <a href="https://cumashop.cu/" target="_blank" rel="noopener noreferrer" class="btn-cumashop">
                             <i data-lucide="shopping-bag"></i> Comprar en CumaShop
                         </a>
                         <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20el%20Escritorio%20Líder"
-                            target="_blank" class="btn-whatsapp">
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
                             <i data-lucide="message-circle"></i> Pedir por WhatsApp
                         </a>
                     </div>
@@ -162,11 +160,11 @@
                     <p class="text-gray-500 text-sm mb-2">Estructura de pino tratado</p>
 
                     <div class="btn-action-group">
-                        <a href="#" class="btn-cumashop">
+                        <a href="https://cumashop.cu/" target="_blank" rel="noopener noreferrer" class="btn-cumashop">
                             <i data-lucide="shopping-bag"></i> Comprar en CumaShop
                         </a>
                         <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20el%20Sofá%20Bahía"
-                            target="_blank" class="btn-whatsapp">
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
                             <i data-lucide="message-circle"></i> Pedir por WhatsApp
                         </a>
                     </div>
@@ -183,11 +181,11 @@
                     <p class="text-gray-500 text-sm mb-2">Melamina hidrófuga alto brillo</p>
 
                     <div class="btn-action-group">
-                        <a href="#" class="btn-cumashop">
+                        <a href="https://cumashop.cu/" target="_blank" rel="noopener noreferrer" class="btn-cumashop">
                             <i data-lucide="shopping-bag"></i> Comprar en CumaShop
                         </a>
                         <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Cocina%20Minimal"
-                            target="_blank" class="btn-whatsapp">
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
                             <i data-lucide="message-circle"></i> Pedir por WhatsApp
                         </a>
                     </div>
@@ -208,10 +206,10 @@
                     <p class="text-gray-500 text-sm mb-2">Madera preciosa y cristal templado</p>
 
                     <div class="btn-action-group">
-                        <a href="#" class="btn-cumashop">
+                        <a href="https://cumashop.cu/" target="_blank" rel="noopener noreferrer" class="btn-cumashop">
                             <i data-lucide="shopping-bag"></i> Comprar en CumaShop
                         </a>
-                        <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Mesa%20Zen" target="_blank"
+                        <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Mesa%20Zen" target="_blank" rel="noopener noreferrer"
                             class="btn-whatsapp">
                             <i data-lucide="message-circle"></i> Pedir por WhatsApp
                         </a>
@@ -229,11 +227,11 @@
                     <p class="text-gray-500 text-sm mb-2">Resistente a la intemperie</p>
 
                     <div class="btn-action-group">
-                        <a href="#" class="btn-cumashop">
+                        <a href="https://cumashop.cu/" target="_blank" rel="noopener noreferrer" class="btn-cumashop">
                             <i data-lucide="shopping-bag"></i> Comprar en CumaShop
                         </a>
                         <a href="https://wa.me/5350000000?text=Hola,%20me%20interesa%20la%20Silla%20Patio"
-                            target="_blank" class="btn-whatsapp">
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
                             <i data-lucide="message-circle"></i> Pedir por WhatsApp
                         </a>
                     </div>
@@ -270,8 +268,8 @@
             </div>
             <div class="flex gap-8 text-[10px] font-bold uppercase text-gray-500">
                 <a href="catalogo.html" class="text-black">Catálogo</a>
-                <a href="index.html#faq">Ayuda</a>
-                <a href="#">Legal</a>
+                <a href="index.html#faq" class="top-nav-link" data-nav-key="ayuda">Ayuda</a>
+                <a href="legal.html">Legal</a>
             </div>
         </div>
     </footer>

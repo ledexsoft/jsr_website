@@ -1,38 +1,63 @@
-lucide.createIcons();
+if (window.lucide?.createIcons) {
+    window.lucide.createIcons();
+}
 
 function toggleFaq(element) {
+    if (!element) return;
     const isActive = element.classList.contains('active');
     document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
     if (!isActive) element.classList.add('active');
 }
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            // Actualizar estado de la tab bar activa según la sección visible
-            updateTabBar(entry.target.id);
-        }
-    });
-}, { threshold: 0.2 });
+function setActiveNavigation() {
+    const path = window.location.pathname.split('/').pop() || 'index.html';
+    const hash = window.location.hash;
 
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    const navKey = hash === '#contacto'
+        ? 'contacto'
+        : hash === '#faq'
+            ? 'ayuda'
+            : path === 'catalogo.html'
+                ? 'catalogo'
+                : path === 'empresas.html'
+                    ? 'empresas'
+                    : path === 'sobre-nosotros.html'
+                        ? 'nosotros'
+                        : 'inicio';
 
-function updateTabBar(id) {
-    if (!id) return;
-    document.querySelectorAll('.tab-item').forEach(item => {
-        item.classList.remove('active');
-        if (item.getAttribute('href') === `#${id}`) {
-            item.classList.add('active');
+    document.querySelectorAll('.ios26-nav-links .top-nav-link, .mobile-tab-bar .tab-item').forEach(link => {
+        link.classList.remove('active');
+        if (link.dataset.navKey === navKey) {
+            link.classList.add('active');
+            if (link.classList.contains('top-nav-link')) {
+                link.setAttribute('aria-current', 'page');
+            }
+        } else if (link.classList.contains('top-nav-link')) {
+            link.removeAttribute('aria-current');
         }
     });
 }
 
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 20) {
-        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.85)';
-    } else {
-        nav.style.backgroundColor = 'rgba(245, 245, 247, 0.72)';
-    }
-});
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+} else {
+    document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
+}
+
+setActiveNavigation();
+window.addEventListener('hashchange', setActiveNavigation);
+
+const navSurface = document.querySelector('.ios26-nav');
+if (navSurface) {
+    window.addEventListener('scroll', () => {
+        navSurface.classList.toggle('is-scrolled', window.scrollY > 20);
+    }, { passive: true });
+}
