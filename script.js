@@ -9,12 +9,31 @@ function toggleFaq(element) {
     if (!isActive) element.classList.add('active');
 }
 
-function updateTabBar(id) {
-    if (!id) return;
-    document.querySelectorAll('.tab-item').forEach(item => {
-        item.classList.remove('active');
-        if (item.getAttribute('href') === `#${id}`) {
-            item.classList.add('active');
+function setActiveNavigation() {
+    const path = window.location.pathname.split('/').pop() || 'index.html';
+    const hash = window.location.hash;
+
+    const navKey = hash === '#contacto'
+        ? 'contacto'
+        : hash === '#faq'
+            ? 'ayuda'
+            : path === 'catalogo.html'
+                ? 'catalogo'
+                : path === 'empresas.html'
+                    ? 'empresas'
+                    : path === 'sobre-nosotros.html'
+                        ? 'nosotros'
+                        : 'inicio';
+
+    document.querySelectorAll('.ios26-nav-links .top-nav-link, .mobile-tab-bar .tab-item').forEach(link => {
+        link.classList.remove('active');
+        if (link.dataset.navKey === navKey) {
+            link.classList.add('active');
+            if (link.classList.contains('top-nav-link')) {
+                link.setAttribute('aria-current', 'page');
+            }
+        } else if (link.classList.contains('top-nav-link')) {
+            link.removeAttribute('aria-current');
         }
     });
 }
@@ -24,8 +43,6 @@ if ('IntersectionObserver' in window) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Actualizar estado de la tab bar activa según la sección visible
-                updateTabBar(entry.target.id);
             }
         });
     }, { threshold: 0.2 });
@@ -35,11 +52,12 @@ if ('IntersectionObserver' in window) {
     document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
 }
 
-const nav = document.querySelector('nav');
-if (nav) {
+setActiveNavigation();
+window.addEventListener('hashchange', setActiveNavigation);
+
+const navSurface = document.querySelector('.ios26-nav');
+if (navSurface) {
     window.addEventListener('scroll', () => {
-        nav.style.backgroundColor = window.scrollY > 20
-            ? 'rgba(255, 255, 255, 0.85)'
-            : 'rgba(245, 245, 247, 0.72)';
+        navSurface.classList.toggle('is-scrolled', window.scrollY > 20);
     }, { passive: true });
 }

@@ -20,25 +20,36 @@
                 </a>
 
                 <div class="ios26-nav-links hidden lg:flex" role="navigation" aria-label="Navegación principal">
-                    <a href="index.html">Inicio</a>
-                    <a href="catalogo.html">Catálogo</a>
-                    <a href="empresas.html">Empresas</a>
-                    <a href="sobre-nosotros.html">Nosotros</a>
-                    <a href="index.html#faq">Ayuda</a>
+                    <a href="index.html" class="top-nav-link" data-nav-key="inicio">Inicio</a>
+                    <a href="catalogo.html" class="top-nav-link" data-nav-key="catalogo">Catálogo</a>
+                    <a href="empresas.html" class="top-nav-link" data-nav-key="empresas">Empresas</a>
+                    <a href="sobre-nosotros.html" class="top-nav-link" data-nav-key="nosotros">Nosotros</a>
+                    <a href="index.html#faq" class="top-nav-link" data-nav-key="ayuda">Ayuda</a>
                 </div>
 
-                <a href="index.html#contacto" class="ios26-cta">
+                <a href="index.html#contacto" class="ios26-cta" data-nav-key="contacto">
                     Solicitar presupuesto
                 </a>
             </div>
         </div>
     </nav>
-
-    <div class="mobile-tab-bar lg:hidden">
-        <a href="index.html" class="tab-item"><i data-lucide="home"></i><span>Inicio</span></a>
-        <a href="catalogo.html" class="tab-item"><i data-lucide="layout-grid"></i><span>Catálogo</span></a>
-        <a href="empresas.html" class="tab-item"><i data-lucide="briefcase"></i><span>B2B</span></a>
-        <a href="index.html#contacto" class="tab-item"><i data-lucide="user"></i><span>Contacto</span></a>
+    <div class="mobile-tab-bar lg:hidden" role="navigation" aria-label="Navegación móvil">
+        <a href="index.html" class="tab-item" data-nav-key="inicio">
+            <i data-lucide="home"></i>
+            <span>Inicio</span>
+        </a>
+        <a href="catalogo.html" class="tab-item" data-nav-key="catalogo">
+            <i data-lucide="layout-grid"></i>
+            <span>Catálogo</span>
+        </a>
+        <a href="empresas.html" class="tab-item" data-nav-key="empresas">
+            <i data-lucide="briefcase"></i>
+            <span>Empresas</span>
+        </a>
+        <a href="index.html#contacto" class="tab-item" data-nav-key="contacto">
+            <i data-lucide="message-circle"></i>
+            <span>Contacto</span>
+        </a>
     </div>
 
     <main class="pt-32 md:pt-40 pb-16 px-6 max-w-[900px] mx-auto fade-in">
@@ -67,8 +78,8 @@
                 <p class="text-gray-400 text-[11px]">© 2024 JSR Carpintería & Construcción.</p>
             </div>
             <div class="flex gap-8 text-[10px] font-bold uppercase text-gray-500">
-                <a href="catalogo.html">Catálogo</a>
-                <a href="index.html#faq">Ayuda</a>
+                <a href="catalogo.html" class="top-nav-link" data-nav-key="catalogo">Catálogo</a>
+                <a href="index.html#faq" class="top-nav-link" data-nav-key="ayuda">Ayuda</a>
                 <a href="legal.html" class="text-black">Legal</a>
             </div>
         </div>

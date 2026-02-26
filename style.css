@@ -77,6 +77,17 @@ html, body {
     background: rgba(255, 255, 255, 0.95);
 }
 
+.ios26-nav-links .top-nav-link.active {
+    color: #1D1D1F;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.ios26-nav.is-scrolled {
+    background: rgba(255, 255, 255, 0.88);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
 .ios26-cta {
     text-decoration: none;
     background: linear-gradient(180deg, #0A84FF, #007AFF);
@@ -112,41 +123,48 @@ html, body {
 /* Barra de navegación inferior (Mobile Tab Bar) */
 .mobile-tab-bar {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 65px;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    border-top: 1px solid rgba(0,0,0,0.05);
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(96%, 440px);
+    height: 68px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: saturate(180%) blur(22px);
+    -webkit-backdrop-filter: saturate(180%) blur(22px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 1000;
-    padding-bottom: env(safe-area-inset-bottom);
+    padding: 6px;
+    box-shadow: 0 16px 34px -24px rgba(0, 0, 0, 0.4);
 }
 
 .tab-item {
+    min-width: 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2px;
     color: #8E8E93;
     text-decoration: none;
     font-size: 10px;
-    font-weight: 500;
-    transition: color 0.2s ease;
+    font-weight: 600;
+    border-radius: 14px;
+    padding: 8px 10px;
+    transition: all 0.2s ease;
 }
 
 .tab-item.active {
     color: var(--ios-blue);
+    background: rgba(0, 122, 255, 0.12);
 }
 
 .tab-item i {
-    margin-bottom: 4px;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
 }
 
 .ios-card {

@@ -66,14 +66,14 @@
                 </a>
 
                 <div class="ios26-nav-links hidden lg:flex" role="navigation" aria-label="Navegación principal">
-                    <a href="index.html">Inicio</a>
-                    <a href="catalogo.html">Catálogo</a>
-                    <a href="empresas.html">Empresas</a>
-                    <a href="sobre-nosotros.html">Nosotros</a>
-                    <a href="index.html#faq">Ayuda</a>
+                    <a href="index.html" class="top-nav-link" data-nav-key="inicio">Inicio</a>
+                    <a href="catalogo.html" class="top-nav-link" data-nav-key="catalogo">Catálogo</a>
+                    <a href="empresas.html" class="top-nav-link" data-nav-key="empresas">Empresas</a>
+                    <a href="sobre-nosotros.html" class="top-nav-link" data-nav-key="nosotros">Nosotros</a>
+                    <a href="index.html#faq" class="top-nav-link" data-nav-key="ayuda">Ayuda</a>
                 </div>
 
-                <a href="index.html#contacto" class="ios26-cta">
+                <a href="index.html#contacto" class="ios26-cta" data-nav-key="contacto">
                     Solicitar presupuesto
                 </a>
             </div>
@@ -81,21 +81,21 @@
     </nav>
 
     <!-- Mobile Tab Bar (Solo visible en pantallas pequeñas y medianas) -->
-    <div class="mobile-tab-bar lg:hidden">
-        <a href="#inicio" class="tab-item active">
+    <div class="mobile-tab-bar lg:hidden" role="navigation" aria-label="Navegación móvil">
+        <a href="index.html" class="tab-item" data-nav-key="inicio">
             <i data-lucide="home"></i>
             <span>Inicio</span>
         </a>
-        <a href="catalogo.html" class="tab-item">
+        <a href="catalogo.html" class="tab-item" data-nav-key="catalogo">
             <i data-lucide="layout-grid"></i>
             <span>Catálogo</span>
         </a>
-        <a href="empresas.html" class="tab-item">
+        <a href="empresas.html" class="tab-item" data-nav-key="empresas">
             <i data-lucide="briefcase"></i>
-            <span>B2B</span>
+            <span>Empresas</span>
         </a>
-        <a href="#contacto" class="tab-item">
-            <i data-lucide="user"></i>
+        <a href="index.html#contacto" class="tab-item" data-nav-key="contacto">
+            <i data-lucide="message-circle"></i>
             <span>Contacto</span>
         </a>
     </div>
@@ -267,11 +267,11 @@
                             <h3 class="font-bold">Silla Minimalista</h3>
                             <p class="text-gray-500 text-sm mb-4">Cedro Seleccionado</p>
                             <div class="btn-action-group">
-                                <a href="https://cumashop.cu/producto/silla-minimalista" target="_blank"
+                                <a href="https://cumashop.cu/producto/silla-minimalista" target="_blank" rel="noopener noreferrer"
                                     class="btn-cumashop">
                                     <i data-lucide="shopping-bag"></i> Comprar
                                 </a>
-                                <a href="https://wa.me/5350000000?text=Info%20Silla%20Minimalista" target="_blank"
+                                <a href="https://wa.me/5350000000?text=Info%20Silla%20Minimalista" target="_blank" rel="noopener noreferrer"
                                     class="btn-whatsapp">
                                     <i data-lucide="message-circle"></i> WhatsApp
                                 </a>
@@ -289,7 +289,7 @@
                                 <a href="https://cumashop.cu/" target="_blank" rel="noopener noreferrer" class="btn-cumashop">
                                     <i data-lucide="shopping-bag"></i> Comprar
                                 </a>
-                                <a href="https://wa.me/5350000000?text=Info%20Mesa%20Centro" target="_blank"
+                                <a href="https://wa.me/5350000000?text=Info%20Mesa%20Centro" target="_blank" rel="noopener noreferrer"
                                     class="btn-whatsapp">
                                     <i data-lucide="message-circle"></i> WhatsApp
                                 </a>
@@ -307,7 +307,7 @@
                                 <a href="https://cumashop.cu/" target="_blank" rel="noopener noreferrer" class="btn-cumashop">
                                     <i data-lucide="shopping-bag"></i> Comprar
                                 </a>
-                                <a href="https://wa.me/5350000000?text=Info%20Escritorio%20Pro" target="_blank"
+                                <a href="https://wa.me/5350000000?text=Info%20Escritorio%20Pro" target="_blank" rel="noopener noreferrer"
                                     class="btn-whatsapp">
                                     <i data-lucide="message-circle"></i> WhatsApp
                                 </a>
