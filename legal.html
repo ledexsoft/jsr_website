@@ -35,6 +35,10 @@
     <nav class="fixed top-0 inset-x-0 z-[100] ios26-nav-shell">
         <div class="max-w-[1200px] mx-auto px-4 md:px-6 py-3">
             <div class="ios26-nav glass-nav border border-black/[0.06]">
+                <button type="button" class="ios26-back-inline" aria-label="Regresar" onclick="goBackOrHome('index.html')">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+
                 <a href="index.html" class="ios26-brand" aria-label="Ir al inicio">
                     <i data-lucide="box" class="w-5 h-5 text-black"></i>
                     <span>JSR Carpintería</span>
@@ -54,11 +58,6 @@
             </div>
         </div>
     </nav>
-
-    <button type="button" class="ios26-back-button" aria-label="Regresar a la página anterior" onclick="goBackOrHome('index.html')">
-        <i data-lucide="chevron-left"></i>
-        <span>Atrás</span>
-    </button>
 
     <div class="mobile-tab-bar lg:hidden" role="navigation" aria-label="Navegación móvil">
         <a href="index.html" class="tab-item" data-nav-key="inicio">

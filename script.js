@@ -18,6 +18,15 @@ function goBackOrHome(fallback = 'index.html') {
     window.location.href = fallback;
 }
 
+
+function updateBackButtonVisibility() {
+    const path = window.location.pathname.split('/').pop() || 'index.html';
+    const shouldShow = path !== 'index.html';
+    document.querySelectorAll('.ios26-back-inline').forEach(button => {
+        button.classList.toggle('hidden', !shouldShow);
+    });
+}
+
 function setActiveNavigation() {
     const path = window.location.pathname.split('/').pop() || 'index.html';
     const hash = window.location.hash;
@@ -62,7 +71,11 @@ if ('IntersectionObserver' in window) {
 }
 
 setActiveNavigation();
-window.addEventListener('hashchange', setActiveNavigation);
+updateBackButtonVisibility();
+window.addEventListener('hashchange', () => {
+    setActiveNavigation();
+    updateBackButtonVisibility();
+});
 
 const navSurface = document.querySelector('.ios26-nav');
 if (navSurface) {
