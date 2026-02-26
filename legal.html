@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información legal y privacidad de JSR Carpintería.">
+    <title>Aviso Legal y Privacidad | JSR Carpintería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pb-20 md:pb-0">
+    <nav class="fixed top-0 inset-x-0 z-[100] ios26-nav-shell">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-6 py-3">
+            <div class="ios26-nav glass-nav border border-black/[0.06]">
+                <a href="index.html" class="ios26-brand" aria-label="Ir al inicio">
+                    <i data-lucide="box" class="w-5 h-5 text-black"></i>
+                    <span>JSR Carpintería</span>
+                </a>
+
+                <div class="ios26-nav-links hidden lg:flex" role="navigation" aria-label="Navegación principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="empresas.html">Empresas</a>
+                    <a href="sobre-nosotros.html">Nosotros</a>
+                    <a href="index.html#faq">Ayuda</a>
+                </div>
+
+                <a href="index.html#contacto" class="ios26-cta">
+                    Solicitar presupuesto
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-tab-bar lg:hidden">
+        <a href="index.html" class="tab-item"><i data-lucide="home"></i><span>Inicio</span></a>
+        <a href="catalogo.html" class="tab-item"><i data-lucide="layout-grid"></i><span>Catálogo</span></a>
+        <a href="empresas.html" class="tab-item"><i data-lucide="briefcase"></i><span>B2B</span></a>
+        <a href="index.html#contacto" class="tab-item"><i data-lucide="user"></i><span>Contacto</span></a>
+    </div>
+
+    <main class="pt-32 md:pt-40 pb-16 px-6 max-w-[900px] mx-auto fade-in">
+        <span class="badge-ios mb-6 inline-block">Información legal</span>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-[#1D1D1F] mb-8">Aviso legal y privacidad.</h1>
+        <div class="ios-card p-6 md:p-10 space-y-6 text-gray-600 leading-relaxed">
+            <section>
+                <h2 class="text-2xl font-bold text-[#1D1D1F] mb-3">Titularidad del sitio</h2>
+                <p>Este sitio es operado por JSR Carpintería para informar sobre servicios de carpintería, diseño y soluciones corporativas en Cuba.</p>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-[#1D1D1F] mb-3">Uso de la información</h2>
+                <p>Los datos compartidos por formularios o mensajería se utilizan exclusivamente para responder solicitudes comerciales, cotizaciones y coordinación de proyectos.</p>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-[#1D1D1F] mb-3">Canales de contacto</h2>
+                <p>Para gestionar eliminación o actualización de información, escribe por WhatsApp o usa el formulario de contacto de la web.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#F5F5F7] py-12 px-6 border-t border-gray-200 hidden lg:block">
+        <div class="max-w-[1200px] mx-auto flex justify-between items-center">
+            <div>
+                <span class="font-bold text-[18px]">JSR Carpintería</span>
+                <p class="text-gray-400 text-[11px]">© 2024 JSR Carpintería & Construcción.</p>
+            </div>
+            <div class="flex gap-8 text-[10px] font-bold uppercase text-gray-500">
+                <a href="catalogo.html">Catálogo</a>
+                <a href="index.html#faq">Ayuda</a>
+                <a href="legal.html" class="text-black">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
